@@ -1,0 +1,307 @@
+* {
+  font-family: 'Montserrat';
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.5;
+}
+
+aside.left {
+  height: 900px;
+  width: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+  background: #22222f none repeat scroll 0% 0%;
+  border-right: 1px solid #333538;
+  border-color: #333538;
+}
+
+aside.left .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+aside.left .logo img {
+  height: 2.8125em;
+  width: 2.8125em;
+}
+
+aside.left .left_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+aside.left .left_menu .left_menu_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5em;
+  font-size: 1.4375em;
+}
+
+aside.left .left_menu .coin_login {
+  position: absolute;
+  bottom: 0;
+}
+
+aside.left .left_menu .coin_login .coin_collection .poly, aside.left .left_menu .coin_login .coin_collection .bsc, aside.left .left_menu .coin_login .coin_collection .eth {
+  text-align: center;
+}
+
+aside.left .left_menu .coin_login .login .login_icon {
+  text-align: center;
+  font-size: 3.2em;
+}
+
+aside.left .left_menu .coin_login .login .login_icon a.fa_user_circle {
+  background: #514646;
+  border-radius: 50%;
+  color: #aca1a1;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat';
+  position: absolute;
+  left: 5em;
+  background: #101017;
+  width: 84%;
+  top: 0;
+}
+
+nav a {
+  padding: 0em 2em;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+nav .nav_button_wrapper {
+  background: #22222f none repeat scroll 0% 0%;
+  padding: 0.25rem;
+  height: -moz-fit-content;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav_button_wrapper button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  margin: 0.8em 0.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em 1em;
+}
+
+nav .nav_button_wrapper button .abbr {
+  font-size: 1.3em;
+}
+
+nav .nav_button_wrapper button .abbr, nav .nav_button_wrapper button .name {
+  margin-left: 0.3em;
+}
+
+nav .nav_button_wrapper .eth {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(#627eea), to(#5468b7)) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(#627eea 0%, #5468b7 100%) repeat scroll 0% 0%;
+}
+
+nav .nav_button_wrapper .bsc {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(#f0b90b), to(#caaa47)) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(#f0b90b 0%, #caaa47 100%) repeat scroll 0% 0%;
+}
+
+nav .nav_button_wrapper .poly {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(#6245d6), to(#8247e5)) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(#6245d6 0%, #8247e5 100%) repeat scroll 0% 0%;
+}
+
+aside.right {
+  background-color: #22222f;
+  position: absolute;
+  right: 0;
+  width: 10em;
+  height: 100vh;
+  top: 0;
+}
+
+.main .part_one {
+  position: absolute;
+  width: 313px;
+  height: 380px;
+  left: 96px;
+  top: 92px;
+}
+
+.main .part_one .check_workstation {
+  padding: 1rem 1rem 0.75rem;
+  -webkit-box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+          box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+  background: #22222f none repeat scroll 0% 0%;
+  border-radius: 25px;
+}
+
+.main .part_one .check_workstation .check_workstation_inner {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-19.49%, rgba(255, 121, 150, 0.34902)), color-stop(78.54%, rgba(35, 35, 48, 0)));
+  background: linear-gradient(180deg, rgba(255, 121, 150, 0.34902) -19.49%, rgba(35, 35, 48, 0) 78.54%);
+  -webkit-filter: drop-shadow(0 10px 44px rgba(250, 214, 227, 0.1));
+          filter: drop-shadow(0 10px 44px rgba(250, 214, 227, 0.1));
+  border-radius: 24px;
+  text-align: center;
+}
+
+.main .part_one .check_workstation .check_workstation_inner img {
+  margin-top: 1rem;
+}
+
+.main .part_one .check_workstation .check_workstation_inner .workstation_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .part_one .check_workstation .check_workstation_inner .workstation_wrapper p {
+  margin-top: 0;
+  margin-left: 1rem;
+  color: #c0707e;
+}
+
+.main .part_one .check_workstation .check_workstation_inner p {
+  margin-top: 0;
+}
+
+.main .part_one .check_workstation button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: currentcolor none medium;
+  width: 100%;
+  line-height: 1.2;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: rgba(252, 163, 192, 0.2) none repeat scroll 0% 0%;
+  color: #fff;
+  border: none;
+}
+
+.main .part_one .check_workstation .event_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  margin-top: 0.75rem;
+  position: relative;
+}
+
+.main .part_one .check_workstation .event_wrapper p {
+  text-align: center;
+  font-size: 14px;
+  color: #ff6a8a;
+}
+
+.main .part_one .check_workstation .event_wrapper .date_picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ff6a8a;
+  border-radius: 2rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  height: 1.4rem;
+  cursor: pointer;
+  position: absolute;
+  right: 2em;
+  background: rgba(255, 255, 255, 0.08) none repeat scroll 0% 0%;
+}
+
+.main .part_one .check_workstation .event_wrapper .date_picker p {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.main .part_one .check_workstation .event_wrapper .badge {
+  background: #0bb68c none repeat scroll 0% 0%;
+  color: #22222f;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  padding: 0px 0.2rem;
+  top: -0.8rem;
+  left: 0px;
+  right: -1.2rem;
+  margin-left: auto;
+  position: relative;
+  width: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

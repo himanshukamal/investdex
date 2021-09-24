@@ -1,0 +1,12 @@
+* {
+    font-family: Montserrat;
+  }
+  
+  * nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Montserrat';
+    
+  }
+  /*# sourceMappingURL=main.css.map */

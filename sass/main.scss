@@ -1,0 +1,238 @@
+
+$uniswap-text: #e047a3;
+$pancakeswap-text: #d1884f;
+$quickswap-text: #39afe2;
+
+* {
+    font-family: 'Montserrat';
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.5;
+}
+    aside.left {
+        height: 900px;
+        width: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 40px;
+        background: rgb(34, 34, 47) none repeat scroll 0% 0%;
+        border-right: 1px solid rgb(51, 53, 56);
+        border-color: rgb(51, 53, 56);
+        .logo {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            position: relative;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            img {
+                height: 2.8125em;
+            width: 2.8125em;
+            }
+        }
+        .left_menu {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow-y: auto;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            .left_menu_icon {
+                display: flex;
+                justify-content: center;
+                padding: 0.5em;
+                font-size: 1.4375em;
+            }
+            .coin_login {
+                position: absolute;
+                bottom: 0;
+                .coin_collection {
+                    .poly, .bsc, .eth {
+                        text-align: center;
+                    }
+                }
+                .login {
+                    .login_icon {
+                        text-align: center;
+                        font-size: 3.2em;
+                        a.fa_user_circle {
+                            background: #514646;
+                            border-radius: 50%;
+                            color: #aca1a1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        display: flex;
+        font-family: 'Montserrat';
+        position: absolute;
+        left: 5em;
+        background: #101017;
+        width: 84%;
+        top: 0;
+        a {
+            padding: 0em 2em;
+            font-size: 3em;
+            text-decoration: none;
+        }
+        .nav_button_wrapper {
+            background: rgb(34, 34, 47) none repeat scroll 0% 0%;
+            padding: 0.25rem;
+            height: -moz-fit-content;
+            border-radius: 0.5rem;
+            display: flex;
+            button {
+                width: max-content;
+                height: 3em;
+                border-radius: 10px;
+                border: none;
+                margin: 0.8em 0.2em;
+                display: flex;
+                align-items: center;
+                padding: 0em 1em;
+
+                .abbr {
+                    font-size: 1.3em;
+                }
+                .abbr, .name {
+                    margin-left: 0.3em;
+                }
+            }
+            .eth {
+                background: rgba(0, 0, 0, 0) linear-gradient(rgb(98, 126, 234) 0%, rgb(84, 104, 183) 100%) repeat scroll 0% 0%;
+            }
+            .bsc {
+                background: rgba(0, 0, 0, 0) linear-gradient(rgb(240, 185, 11) 0%, rgb(202, 170, 71) 100%) repeat scroll 0% 0%;
+            }
+            .poly {
+                background: rgba(0, 0, 0, 0) linear-gradient(rgb(98, 69, 214) 0%, rgb(130, 71, 229) 100%) repeat scroll 0% 0%;
+            }
+        }
+        
+    }
+    aside.right {
+        background-color: #22222f;
+        position: absolute;
+        right: 0;
+        width: 10em;
+        height: 100vh;
+        top: 0;
+    }
+    .main {
+        .part_one {
+            position: absolute;
+            width: 313px;
+            height: 380px;
+            left: 96px;
+            top: 92px;
+            .check_workstation {
+                padding: 1rem 1rem 0.75rem;
+                box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+                background: rgb(34, 34, 47) none repeat scroll 0% 0%;
+                border-radius: 25px;
+                .check_workstation_inner {
+                    background: linear-gradient(180deg,rgba(255,121,150,.34902) -19.49%,rgba(35,35,48,0) 78.54%);
+                    filter: drop-shadow(0 10px 44px rgba(250,214,227,.1));
+                    border-radius: 24px;
+                    text-align: center;
+                    img {
+                        margin-top: 1rem;
+                    }
+                    .workstation_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            margin-top: 0;
+                            margin-left: 1rem;
+                            color: #c0707e;
+                        }
+                    }
+                    p {
+                        margin-top: 0;
+                    }
+                }    
+                button {
+                    display: inline-flex;
+                    appearance: none;
+                    -moz-box-align: center;
+                    align-items: center;
+                    -moz-box-pack: center;
+                    justify-content: center;
+                    transition: all 250ms ease 0s;
+                    user-select: none;
+                    position: relative;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    outline: currentcolor none medium;
+                    width: 100%;
+                    line-height: 1.2;
+                    border-radius: 0.5rem;
+                    font-weight: 600;
+                    height: 2.5rem;
+                    min-width: 2.5rem;
+                    font-size: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    background: rgba(252, 163, 192, 0.2) none repeat scroll 0% 0%;
+                    color: #fff;
+                    border: none;
+                }
+                .event_wrapper {
+                    display: flex;
+                    -moz-box-align: center;
+                    align-items: center;
+                    -moz-box-pack: justify;
+                    justify-content: space-between;
+                    padding-left: 0.25rem;
+                    padding-right: 0.25rem;
+                    margin-top: 0.75rem;
+                    position: relative;
+                    p {
+                        text-align: center;
+                        font-size: 14px;
+                        color: rgb(255, 106, 138);
+                    }
+                    .date_picker {
+                        display: flex;
+                        -moz-box-align: center;
+                        align-items: center;
+                        border: 1px solid rgb(255, 106, 138);
+                        border-radius: 2rem;
+                        padding-left: 0.25rem;
+                        padding-right: 0.25rem;
+                        height: 1.4rem;
+                        cursor: pointer;
+                        position: absolute;
+                        right: 2em;
+                        background: rgba(255, 255, 255, 0.08) none repeat scroll 0% 0%;
+                        p {
+                            color: rgb(255, 255, 255);
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding-left: 0.25rem;
+                            padding-right: 0.25rem;
+                        }
+                    }
+                    .badge {
+                        background: rgb(11, 182, 140) none repeat scroll 0% 0%;
+                        color: rgb(34, 34, 47);
+                        border-radius: 0.5rem;
+                        font-size: 0.75rem;
+                        padding: 0px 0.2rem;
+                        top: -0.8rem;
+                        left: 0px;
+                        right: -1.2rem;
+                        margin-left: auto;
+                        position: relative;
+                        width: 2rem;
+                    }
+                }
+                }
+            }
+        }
+    
