@@ -3,6 +3,11 @@ $uniswap-text: #e047a3;
 $pancakeswap-text: #d1884f;
 $quickswap-text: #39afe2;
 
+body {
+    background: rgb(17, 17, 24) none repeat scroll 0% 0%;
+    position: relative;
+    height: 100vh;
+}
 * {
     font-family: 'Montserrat';
     color: rgba(255, 255, 255, 0.92);
@@ -233,6 +238,13 @@ $quickswap-text: #39afe2;
                     }
                 }
                 }
-            }
         }
+        .part_two {
+            position: absolute;
+            width: 313px;
+            height: 380px;
+            left: 10em;
+            top: 92px;
+        }
+    }
     
