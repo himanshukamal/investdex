@@ -792,4 +792,134 @@ nav {
     border-radius:30px;
     margin-right: 1em;
     margin-left: 0.8em;
+    .tools_tab{
+        width: 100%;
+        margin-bottom: 0.75rem;
+        .tools_tab_container {
+            justify-content: center;
+            display: flex;
+            -moz-box-pack: start;
+            justify-content: center;
+            flex-direction: row;
+            background: rgb(17, 17, 24) none repeat scroll 0% 0%;
+            width: 100%;
+            border-radius: 0.75rem;
+            overflow-x: auto;
+            position: relative;
+            button {
+                display: flex;
+                flex-direction: column;
+                display: flex;
+                flex-direction: column;
+                -moz-box-align: center;
+                align-items: center;
+                -moz-box-pack: center;
+                justify-content: center;
+                width: -moz-fit-content;
+                margin: 0.25rem;
+                background: none;
+                border: none;
+                svg {
+                    width: 1em;
+                    height: 17px;
+                    display: inline-block;
+                    line-height: 1em;
+                    flex-shrink: 0;
+                    color: rgb(255, 123, 202);
+                }
+                #uniswap_text {
+                    color: rgb(255, 123, 202);
+                    font-weight: 500;
+                    margin-left: 0.25rem;
+                    font-size: 0.9rem;
+                }
+                #pancake_text {
+                    color: rgb(209, 136, 79);
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    margin-left: 0.25rem;
+                }
+                #quickswap_text {
+                    color: rgb(57, 175, 226);
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    margin-left: 0.25rem;
+                }
+                
+            }
+        }
+    }
+    .search_container {
+        border: 1px solid rgba(17, 17, 24, 0.4);
+        border-bottom-left-radius: 0.75rem;
+        border-bottom-right-radius: 0.75rem;
+        display: flex;
+        -moz-box-align: center;
+        align-items: center;
+        background: rgb(34, 34, 47) none repeat scroll 0% 0%;
+        box-shadow: none;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        position: relative;
+        border-radius: 0.75rem;
+        .fa-search {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            line-height: 1em;
+            flex-shrink: 0;
+            color: rgb(125, 127, 130);
+        }
+        .input_container {
+            width: calc(100% - 2rem);
+            input {
+                background: rgb(34, 34, 47) none repeat scroll 0% 0%;
+                font-size: 15px;
+                user-select: none;
+                min-width: 100%;
+                max-width: 100%;
+                border: none !important;
+                box-shadow: none !important;
+                transition: none !important;
+                padding: .4rem .6rem !important;
+            }
+        }
+    }
+    .pair_container {
+        margin-top: 0.5rem;
+        .best_pair {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 0.75rem;
+            &:hover {
+                background: linear-gradient(90deg,#1a1a26,rgba(26,26,38,0) 86.72%);
+            }
+            .fa-eye , .fa-narwhal, .fa-link {
+                place-items: center;
+                display: grid;
+                border: 1px solid #2d2828;
+                border-radius: 16px;
+                padding: 1em;
+                color: #798dff;
+                background: #161414;
+                margin-right: 1em;
+            }
+            .pair_title {
+                flex: 1 1 0%;
+                #pair_title_name {
+                    color: rgb(121, 141, 255);
+                    font-weight: 500;
+                    line-height: 1.4rem;
+                    margin-bottom: 0;
+                }
+                #pair_title_description {
+                    font-size: 0.875rem;
+                    color: rgb(144, 148, 161);
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }
