@@ -33,12 +33,12 @@ function getCoinRanking() {
                 let trending_coin = coinsData.shift();
                 document.getElementById("topcoin_name").innerHTML = trending_coin.name;
                 document.getElementById("topcoin_price").innerHTML = defaultCurrency + parseFloat(trending_coin.price).toFixed(2);
-                document.getElementById("topcoin_change").innerHTML = trending_coin.change;
+                document.getElementById("topcoin_change").innerHTML = trending_coin.change+"%";
                 
                 // set today's date
                 let today = new Date;
                 
-                document.getElementById("today").innerHTML = today.toLocaleDateString();
+                document.getElementById("today").innerHTML = today.toLocaleDateString() + ' ' + 'at' + ' ' + today.toLocaleTimeString();
                 
                 // for loop starts
                 coinsData.forEach((coin) => {
@@ -76,15 +76,26 @@ function getLatestNews() {
         // console.log(json.results);   
         
         for (let i = 0; i<json.results.length; i++) {
-            console.log(json.results[i]['title'],json.results[i]['url']);
+            // console.log(json.results[i]['title'],json.results[i]['url']);
+
+            //print title
+            document.getElementById("news_header_text").innerHTML = json.results[i]['title'];
             
-            // document.getElementById("data").innerHTML = cryptoCoins;
-            // news_page = document.createElement('news_page');
-            // top_news = document.createElement('top_news');
+            // print description
+            // console.log(json.results[i]['abstract']);
+            document.getElementById("news_body_text").innerHTML = json.results[i]['abstract'];
+            
+            //print source
+            // console.log(json.results[i]['source']);
+            document.getElementById("news_link").innerHTML = json.results[i]['source'];
+
+            //print time of publication 
+            // console.log(json.results[i]['updated']);
+            document.getElementById("news_published").innerHTML = json.results[i]['updated'];
+
+            
         } 
-        //   news_page.appendChild(top_news);
         
-        // const news_page = json.response.docs;
         
         
         

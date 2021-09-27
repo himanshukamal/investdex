@@ -61,6 +61,9 @@ body {
                 justify-content: center;
                 padding: 0.5em;
                 font-size: 1.4375em;
+                .fa-home-lg {
+                    color: #2eac8d;
+                }
             }
             
         }
@@ -583,6 +586,7 @@ nav {
             .swap_button_row {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 .swap_wrapper {
                     display: flex;
                     -moz-box-align: center;
@@ -609,13 +613,14 @@ nav {
                     display: flex;
                     border: 1px solid black;
                     background: black;
-                    border-radius: 18%;
+                    border-radius: 0.75em;
                     padding: 0em 0.7em;
+                    height: 2.1em;
                     button{
                         background: transparent;
                         border: none;
                         span {
-                            color:brown
+                            
                         }
                     }
                     
@@ -687,4 +692,104 @@ nav {
             color:#E03088;
         }
     }
+}
+
+.news {
+    background: rgb(34, 34, 47) none repeat scroll 0% 0%;
+    border-radius: 30px;
+    box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+    .news_heading {
+        display: flex;
+        -moz-box-align: center;
+        align-items: center;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        svg {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            line-height: 1em;
+            flex-shrink: 0;
+            color: rgb(11, 182, 140);
+            margin: 0.25rem;
+        }
+        .title {
+            margin-left: 0.75rem;
+            flex: 1 1 0%;
+            #title_latest_news {
+                color: rgb(187, 191, 202);
+                line-height: 0.8rem;
+                margin: 0;
+            }
+            #Newsfeed {
+                color: rgb(255, 255, 255);
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+        #showall {
+            color: rgb(11, 182, 140);
+            background: rgba(34, 151, 122, 0.15) none repeat scroll 0% 0%;
+            padding: 0.25rem 0.5rem;
+            font-size: 12px;
+            border-radius: 0.5rem;
+        }
+    }
+    .news_body {
+        display: block;
+        border-radius: 30px;
+        position: relative;
+        overflow-x: auto;
+        height: calc(100% - 3.6rem);
+        .news_card {
+            padding-bottom: 0em;
+            margin: 0em 1em;
+            border-bottom-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            padding: 1rem 1.5rem;
+            min-width: auto;
+            margin-top: -8px;
+            position: -webkit-sticky;
+            position: sticky;
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 4px 12px -2px rgba(0,0,0,.07);
+            border: 1px solid rgb(46, 46, 63);
+            background: rgb(17, 17, 24) none repeat scroll 0% 0%;
+            #news_header_text {
+                font-weight: 700;
+                color: rgb(34, 151, 122);
+                line-height: 22px;
+                margin-bottom: 0.5rem;
+            }
+            .news_footer {
+                display: flex;
+                -moz-box-pack: justify;
+                justify-content: space-between;
+                margin-top: 0.5rem;
+                #news_link {
+                    color: rgb(255, 174, 102);
+                }
+                .news_time_wrapper {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.popular_tools {
+    padding: 1rem 1rem 0.75rem;
+    background: rgb(34, 34, 47) none repeat scroll 0% 0%;
+    position: relative;
+    box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+    border-radius:30px;
+    margin-right: 1em;
+    margin-left: 0.8em;
 }

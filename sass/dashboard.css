@@ -92,6 +92,10 @@ body {
   font-size: 1.4375em;
 }
 
+.dashboard_wrapper .side_nav .left_menu .left_menu_icon .fa-home-lg {
+  color: #2eac8d;
+}
+
 .dashboard_wrapper .side_nav .coin_login .coin_collection .poly, .dashboard_wrapper .side_nav .coin_login .coin_collection .bsc, .dashboard_wrapper .side_nav .coin_login .coin_collection .eth {
   text-align: center;
 }
@@ -772,6 +776,9 @@ nav .nav_button_wrapper .poly {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .trending .trending_container .trending_statusbar .swap_button_row .swap_wrapper {
@@ -810,17 +817,14 @@ nav .nav_button_wrapper .poly {
   display: flex;
   border: 1px solid black;
   background: black;
-  border-radius: 18%;
+  border-radius: 0.75em;
   padding: 0em 0.7em;
+  height: 2.1em;
 }
 
 .trending .trending_container .trending_statusbar .swap_button_row .swap_buttons button {
   background: transparent;
   border: none;
-}
-
-.trending .trending_container .trending_statusbar .swap_button_row .swap_buttons button span {
-  color: brown;
 }
 
 .trending .trending_container .trending_statusbar .swap_button_row .show_all {
@@ -911,5 +915,133 @@ nav .nav_button_wrapper .poly {
 
 .trending_table tbody .coinChangeRed {
   color: #E03088;
+}
+
+.news {
+  background: #22222f none repeat scroll 0% 0%;
+  border-radius: 30px;
+  -webkit-box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+          box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+}
+
+.news .news_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.news .news_heading svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  line-height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #0bb68c;
+  margin: 0.25rem;
+}
+
+.news .news_heading .title {
+  margin-left: 0.75rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+.news .news_heading .title #title_latest_news {
+  color: #bbbfca;
+  line-height: 0.8rem;
+  margin: 0;
+}
+
+.news .news_heading .title #Newsfeed {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.news .news_heading #showall {
+  color: #0bb68c;
+  background: rgba(34, 151, 122, 0.15) none repeat scroll 0% 0%;
+  padding: 0.25rem 0.5rem;
+  font-size: 12px;
+  border-radius: 0.5rem;
+}
+
+.news .news_body {
+  display: block;
+  border-radius: 30px;
+  position: relative;
+  overflow-x: auto;
+  height: calc(100% - 3.6rem);
+}
+
+.news .news_body .news_card {
+  padding-bottom: 0em;
+  margin: 0em 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 1rem 1.5rem;
+  min-width: auto;
+  margin-top: -8px;
+  position: -webkit-sticky;
+  position: sticky;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -webkit-box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.07);
+  border: 1px solid #2e2e3f;
+  background: #111118 none repeat scroll 0% 0%;
+}
+
+.news .news_body .news_card #news_header_text {
+  font-weight: 700;
+  color: #22977a;
+  line-height: 22px;
+  margin-bottom: 0.5rem;
+}
+
+.news .news_body .news_card .news_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.news .news_body .news_card .news_footer #news_link {
+  color: #ffae66;
+}
+
+.news .news_body .news_card .news_footer .news_time_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular_tools {
+  padding: 1rem 1rem 0.75rem;
+  background: #22222f none repeat scroll 0% 0%;
+  position: relative;
+  -webkit-box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+          box-shadow: rgba(1, 1, 2, 0.14) 0px 12px 54px;
+  border-radius: 30px;
+  margin-right: 1em;
+  margin-left: 0.8em;
 }
 /*# sourceMappingURL=dashboard.css.map */
